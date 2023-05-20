@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800');
+@import "compass/css3";
 
 html,
 body {
@@ -72,7 +73,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .video-text-overlay .video-text .blue-text {
-  color: #02aeef;
+  color: #68d905;
 }
 
 .video-text-overlay .video-text .text-slider {
@@ -306,6 +307,7 @@ body::-webkit-scrollbar-thumb {
     line-height: 50px;
     transition: 0.7s all;
   }
+
   footer{
     background-color: #1b1b1b;
     height: 50vh;
@@ -316,3 +318,31 @@ body::-webkit-scrollbar-thumb {
      color: #fff;
      padding: 100px 0 20px;
    }
+
+   #canvas {
+    background-color: rgb(0, 0, 0);
+    filter: brightness(0.3);
+  }
+
+  #blink:after {
+    content:"_";
+    opacity: 0;
+    animation: cursor 1s infinite;
+  }
+  @keyframes cursor {
+    0% {
+      opacity: 0;
+    }
+    40% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
