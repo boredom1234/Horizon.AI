@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+.fullscreen-video {
+  width: 100%;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  overflow: hidden;
+  position: relative;
+}
+
+.fullscreen-video video {
+  filter: grayscale(100%) brightness(50%);
+  object-fit: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-position: 50% 50%;
+}
+
+.video-text-overlay {
+  position: absolute;
+  left: 8vw;
+  bottom: calc(var(--vh, 1vh) * 20);
+  z-index: 7;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .video-text-overlay {
+    left: 9vw;
+  }
+}
+
+.video-text-overlay .video-text {
+  color: #fff;
+  font-size: 30px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .video-text-overlay .video-text {
+    font-size: 60px;
+    line-height: 64px;
+  }
+}
+
+.video-text-overlay .video-text .blue-text {
+  color: #02aeef;
+}
+
+.video-text-overlay .video-text .text-slider {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px) {
+  .video-text-overlay .video-text .text-slider {
+    letter-spacing: 4px;
+  }
+}
+
+.video-text-overlay .video-text .slideshow {
+  display: inline-block;
+}
+
+.video-text-overlay .video-text .actions {
+  display: block;
+}
+
+.intro{
+    text-align: justify;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+.intro h1{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.intro p{
+    font-size: 1.3rem;
+    padding-bottom: 30px;
+}
+
+.info{
+    padding: 25px;
+    height: 600px;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    padding-left: 100px;
+  }
+  .para{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .p1, .p2{
+    padding: 25px;
+    padding-top: 50px;
+    
+  }
+.p2{
+    padding-left:60px;
+}
+  .p1 h3, .p2 h3{
+    padding-bottom: 20px;
+  }
+  .p1 p{
+    text-align: justify;
+    font-size: 0.9rem;
+  }
+  .p2 p{
+    text-align: justify;
+    font-size: 0.8rem;
+  }
+  .btn{
+    width: 30%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    transition: .8s;
+    color: white;
+    font-size: 0.6rem;
+  }
+  .btn a{
+    color: white;
+    text-decoration: none;
+  }
+  .btn:hover{
+    font-size: 0.9rem;
+  }
+ 
+  .image-resize {
+    width: 100px;
+    height: auto;
+  }
+
+  .btn-1{
+    width: 20%;
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: none;
+    background: #000000;
+    cursor: pointer;
+    transition: .8s;
+    color: white;
+    font-size: 0.7rem;
+  }
+  .btn-1 a{
+    color: white;
+    text-decoration: none;
+  }
+  .btn-1:hover{
+    font-size: 0.9rem;
+  }
+
+  *, *:before, *:after {
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+  }
+  
+  ::selection {
+    background: #000;
+    color: #aaf;
+  }
+  .alternate ::selection {
+    background: #02aeef;
+    color: #000;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 2000px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  ul, li, h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+  .logo {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 80px;
+  }
+  .logo h3 {
+    display: inline-block;
+    margin-left: 10px; /* Adjust the spacing between the image and heading as needed */
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+#img{
+    position: absolute;
+    padding-top: 24px;
+    left: 60px;
+}
+  .inner {
+    width: 100%;
+    position: flex;
+    margin: 0 auto;
+  }
+  
+  header {
+    position: fixed;
+    width: 100%;
+    background: #000;
+    transition: 0.7s all;
+    z-index: 100;
+  }
+  
+  header.alt-header {
+    background: #fff;
+  }
+  
+  .alt-header a {
+    color: #222222;
+  }
+  
+  body.header-fixed header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding-top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  nav {
+    overflow: hidden;
+  }
+  
+  nav ul {
+    float: right;
+  }
+  
+  nav li {
+    display: inline;
+    float: left;
+  }
+  
+  nav a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 25px;
+    transition: 0.3s all;
+  }
+  
+  nav a:hover {
+    background: #02aeef;
+  }
+  
+  .logo {
+    float: left;
+    color: #fff;
+    font-size: 50px;
+    line-height: 50px;
+    transition: 0.7s all;
+  }
+  footer{
+    background-color: #1b1b1b;
+    height: 50vh;
+   }
+   .footer{
+     width: 80%;
+     margin: 0 auto;
+     color: #fff;
+     padding: 100px 0 20px;
+   }
