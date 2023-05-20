@@ -8,6 +8,22 @@ body {
   scroll-behavior: smooth;
 }
 
+/* Hide the default scroll bar */
+body::-webkit-scrollbar {
+  width: 0.0em;
+  background-color: transparent;
+}
+
+/* Add custom styling to the scroll bar track */
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* Add custom styling to the scroll bar thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
 
 .fullscreen-video {
   width: 100%;
