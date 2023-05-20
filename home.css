@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb {
   }
   
   nav a:hover {
-    background: #02aeef;
+    text-decoration: underline;
   }
   
   .logo {
