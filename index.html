@@ -1,90 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="icon" type="image/png" href="icons8-blackhole-96.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="home.css">
+  <head>
+    <link rel="icon" type="image/png" href="icons8-blackhole-96.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="banner.css" />
     <title>Horizon.AI</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="topnav">
-        <div class="inner">
-          <div class="logo">
-            <img src="icons8-blackhole-24.png" alt="icon" id="img"> <h3>Horizon.AI</h3> 
+      <div class="inner">
+        <div class="logo">
+          <img src="icons8-blackhole-24.png" alt="icon" id="img" />
+          <h3>Horizon.AI</h3>
         </div>
-          <nav role='navigation'>
-            <ul>
-              <li><a href="#home" class="nav-link">Home</a></li>
-              <li><a href="#about"class="nav-link">About</a></li>
-              <li><a href="#releases" class="nav-link">Releases</a></li>
-              <li><a href="#contact" class="nav-link">Contact Us</a></li>
-            </ul>
-          </nav>  
-        </div>
-      </header>
+        <nav role="navigation">
+          <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#releases" class="nav-link">Releases</a></li>
+            <li><a href="#contact" class="nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <section class="fullscreen-video" id="home">
-        <!-- <video loop="" autoplay="" muted="" playsinline="" preload="auto" >
-          <source src="vid.mp4" type="video/mp4">
-        </video> -->
-        <canvas id="canvas"></canvas>
-        <div class="video-text-overlay">
-          <div class="video-text">
-            Intelligent <br>
-            <div class="blue-text text-slider">
-              <div class="slideshow" data-effect="fx17">
-                <div class="slide slide--current"><span class="slide-title">Solutions</span></div>
+      <canvas id="canvas"></canvas>
+      <div class="video-text-overlay">
+        <div class="video-text">
+          Intelligent <br />
+          <div class="blue-text text-slider">
+            <div class="slideshow" data-effect="fx17">
+              <div class="slide slide--current">
+                <span class="slide-title">Solutions</span>
               </div>
-            </div><br />for a<br />
-            <div id="wrap">
-              <span id="blink">Changing World</span>
             </div>
           </div>
+          <br />for a<br />
+          <div id="wrap">
+            <span id="blink">Changing World</span>
+          </div>
         </div>
-        <div class="scroll-down"><span></span></div>
+      </div>
+      <div class="scroll-down"><span></span></div>
     </section>
-        <section class="intro" id="about">
-            <h1>INTRODUCING HORIZON.AI</h1>
-            <p>Horizon.AI is a gateway to the cutting-edge world of intelligent technologies, where limitless possibilities unfold. Just like OpenAI, we are passionate about pushing the boundaries of AI and bringing its transformative power to the forefront. Join us on this thrilling journey as we navigate the frontiers of AI, unleashing its potential to drive innovation, improve decision-making, and create a better world. Explore our resources, dive into thought-provoking insights, and be inspired by the possibilities that lie ahead.Welcome to our AI-powered realm, where the future becomes reality. Embrace the possibilities, explore the breakthroughs, and be part of the AI revolution that is reshaping our world. Together, let's unlock the extraordinary capabilities of artificial intelligence and shape a future that exceeds our wildest imaginations.</p>
-        </section>
-        <section class="info" id="releases">
-            <div class="para">
-              <div class="p1">
-                <img src="sabergpt.png" alt="saber" class="image-resize">
-                <h3>SaberGPT</h3>
-                <p style="text-align: right;">SaberGPT is an experimental open-source application showcasing the capabilities of the GPT-3 language model. This program, driven by GPT-3, chains together LLM "thoughts", to autonomously achieve whatever goal you set. As one of the first examples of GPT-3 running fully autonomously, Auto-GPT pushes the boundaries of what is possible with AI.</p>
-                <button class="btn"><a href="https://horizon-ai.vercel.app/" target="_blank">Try GPT-3/GPT-4</a></button>&nbsp;&nbsp;&nbsp;
-                <button class="btn"><a href="http://localhost:9200/#/" target="_blank">Try GPT-3 Agents</a></button>
-              </div>
-              <div class="p2">
-                <img src="chattofiles.png" alt="chattofiles" class="image-resize">
-                <h3>ChatToFiles</h3>
-                <p style="text-align: right;">ChatToFiles is an advanced tool that enables seamless communication with PDF files using Universal Sentence Encoder and Open AI technology. It stands out by offering highly accurate responses, surpassing other similar tools, due to its exceptional embeddings that eliminate erroneous information. Moreover, when providing answers, PDF GPT can precisely reference the page numbers containing relevant information, boosting the reliability of responses and streamlining the search for specific details.</p>
-                <button class="btn-1"><a href="https://chat-to-files.vercel.app/" target="_blank">Try it out</a></button>
-              </div>
-            </div>
-          </section>
-</body>
-<footer>
-  <div class="footer" id="contact">
+    <section class="intro" id="about">
+      <h1>INTRODUCING HORIZON.AI</h1>
+      <div class="bg-text-container">
+        <div class="animate-text">
+          <span id="slides">HORIZON&nbsp;</span>
+          <span id="slides">HORIZON&nbsp;</span>
+        </div>
+        <div class="animate-text left">
+          <span id="slides">HORIZON&nbsp;</span>
+          <span id="slides">HORIZON&nbsp;</span>
+        </div>
+      </div>
+      <p>
+        Horizon.AI is a Gateway to the <u><b>cUtTing-edGe</b></u> world of
+        <u><b>INTELLIGENT</b></u> technologies, where
+        <u><b>limitless</b></u> POSSIBILITIES unfold. Just like
+        <u><b>OpenAI</b></u
+        >, we are passionate about <u><b>PUSHING</b></u> the boundaries of
+        <u><b>AI</b></u> and bringing its <u><b>TRANSFORMATIVE</b></u> power to
+        the forefront. Join us on this <u><b>THRILLING</b></u> journey as we
+        <u><b>NAVIGATE</b></u> the frontiers of <u><b>AI</b></u
+        >, <u><b>UNLEASHING</b></u> its potential to drive
+        <u><b>INNOVATION</b></u
+        >, improve decision-making, and CREATE a better world.
+        <u><b>EXPLORE</b></u> our resources, dive into
+        <u><b>THOUGHT-PROVOKING</b></u> insights, and be
+        <u><b>INSPIRED</b></u> by the POSSIBILITIES that lie ahead. Welcome to
+        our <u><b>AI-powered</b></u> REALM, where the FUTURE becomes REALITY.
+        EMBRACE the possibilities, <u><b>EXPLORE</b></u> the BREAKTHROUGHS, and
+        be part of the <u><b>AI revolution</b></u> that is reshaping our world.
+        Together, let's unlock the <u><b>EXTRAORDINARY</b></u> capabilities of
+        <u><b>ARTIFICIAL INTELLIGENCE</b></u> and shape a FUTURE that
+        <u><b>EXCEEDS</b></u> our wildest imaginations.
+      </p>
+    </section>
+    <section class="info" id="releases">
+      <div class="para">
+        <div class="p1">
+          <img src="sabergpt.png" alt="saber" class="image-resize" />
+          <h3>SaberGPT</h3>
+          <p style="text-align: right">
+            <u><b>SaberGPT</b></u> is an experimental open-source application
+            showcasing the capabilities of the GPT-3 language model. This
+            program, driven by GPT-3, chains together
+            <u><b>LLM "thoughts"</b></u
+            >, to autonomously achieve whatever goal you set. As one of the
+            first examples of GPT-3 running fully autonomously,
+            <u><b>Auto-GPT</b></u> pushes the boundaries of what is possible
+            with AI.
+          </p>
+          <button class="btn">
+            <a href="https://horizon-ai.vercel.app/" target="_blank"
+              >Try GPT-3/GPT-4</a
+            ></button
+          >&nbsp;&nbsp;&nbsp;
+          <button class="btn">
+            <a href="http://localhost:9200/#/" target="_blank"
+              >Try GPT-3 Agents</a
+            >
+          </button>
+        </div>
+        <div class="p2">
+          <img src="chattofiles.png" alt="chattofiles" class="image-resize" />
+          <h3>ChatToFiles</h3>
+          <p style="text-align: right">
+            <u><b>ChatToFiles</b></u> is an advanced tool that enables seamless
+            communication with PDF files using
+            <u><b>Universal Sentence Encoder</b></u> and
+            <u><b>Open AI</b></u> technology. It stands out by offering highly
+            accurate responses, surpassing other similar tools, due to its
+            exceptional embeddings that eliminate erroneous information.
+            Moreover, when providing answers, <u><b>PDF GPT</b></u> can
+            precisely reference the page numbers containing relevant
+            information, boosting the reliability of responses and streamlining
+            the search for specific details.
+          </p>
+          <button class="btn-1">
+            <a href="https://chat-to-files.vercel.app/" target="_blank"
+              >Try it out</a
+            >
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <div class="footer" id="contact">
       <h1>Want to get in touch with us?</h1>
-      <p>Contact us at <a href="mailto:horizonai@gmail.com" style="color: magenta;">horizonai@gmail.com</a></p>
-  </div>
+      <p>
+        Contact us at
+        <a href="mailto:horizonai@gmail.com" style="color: magenta"
+          >horizonai@gmail.com</a
+        >
+      </p>
+    </div>
 
-  <div class="design"></div>
+    <div class="design"></div>
 
-  <style>
+    <style>
       .design {
-          width: 100%;
-          height: 50%;
-          position: relative;
-          background: linear-gradient(to bottom, transparent 0, transparent 50%, white 50%, white);
-          background-size: 100% 20px;
-          background-repeat: repeat-y;
+        width: 100%;
+        height: 50%;
+        position: relative;
+        background: linear-gradient(
+          to bottom,
+          transparent 0,
+          transparent 50%,
+          white 50%,
+          white
+        );
+        background-size: 100% 20px;
+        background-repeat: repeat-y;
       }
-  </style>
-</footer>
+    </style>
+    <p
+      id="copyright"
+      style="
+        font-size: 10px;
+        color: black;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      ©️ brori-boredom1234
+    </p>
+  </footer>
   <script src="script.js"></script>
 </html>
-  
